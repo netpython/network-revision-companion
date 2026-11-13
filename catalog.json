@@ -1,0 +1,282 @@
+[
+  {
+    "id": "01",
+    "title": "OSI, encapsulation et chemin d’un paquet",
+    "group": "01-fondations",
+    "path": "fiches/01-fondations/01-osi-et-chemin-du-paquet.md",
+    "questions": 3
+  },
+  {
+    "id": "02",
+    "title": "Cuivre, fibre, optiques et PoE",
+    "group": "01-fondations",
+    "path": "fiches/01-fondations/02-cuivre-fibre-optique-poe.md",
+    "questions": 3
+  },
+  {
+    "id": "03",
+    "title": "Ethernet, apprentissage MAC et flooding",
+    "group": "02-switching",
+    "path": "fiches/02-switching/03-ethernet-mac.md",
+    "questions": 3
+  },
+  {
+    "id": "04",
+    "title": "VLAN, trunk 802.1Q et QinQ",
+    "group": "02-switching",
+    "path": "fiches/02-switching/04-vlan-trunk-qinq.md",
+    "questions": 3
+  },
+  {
+    "id": "05",
+    "title": "STP et choix du chemin sans boucle",
+    "group": "02-switching",
+    "path": "fiches/02-switching/05-stp.md",
+    "questions": 3
+  },
+  {
+    "id": "06",
+    "title": "RSTP et MSTP",
+    "group": "02-switching",
+    "path": "fiches/02-switching/06-rstp-mstp.md",
+    "questions": 3
+  },
+  {
+    "id": "07",
+    "title": "PVST+, Rapid PVST+ et interopérabilité",
+    "group": "02-switching",
+    "path": "fiches/02-switching/07-pvst-rapid-pvst.md",
+    "questions": 3
+  },
+  {
+    "id": "08",
+    "title": "LACP, port-channel et MLAG",
+    "group": "02-switching",
+    "path": "fiches/02-switching/08-lacp-mlag.md",
+    "questions": 3
+  },
+  {
+    "id": "09",
+    "title": "LLDP, découverte et cartographie",
+    "group": "02-switching",
+    "path": "fiches/02-switching/09-lldp-et-decouverte.md",
+    "questions": 3
+  },
+  {
+    "id": "10",
+    "title": "IPv4, CIDR, VLSM et calcul de sous-réseaux",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/10-ipv4-et-subnetting.md",
+    "questions": 3
+  },
+  {
+    "id": "11",
+    "title": "IPv6, adressage et découverte de routeur",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/11-ipv6.md",
+    "questions": 3
+  },
+  {
+    "id": "12",
+    "title": "ARP, Neighbor Discovery et ICMP",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/12-arp-nd-icmp.md",
+    "questions": 3
+  },
+  {
+    "id": "13",
+    "title": "RIB, FIB et choix de route",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/13-rib-fib-et-selection.md",
+    "questions": 3
+  },
+  {
+    "id": "14",
+    "title": "OSPF, adjacencies, zones et LSA",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/14-ospf.md",
+    "questions": 3
+  },
+  {
+    "id": "15",
+    "title": "EIGRP, DUAL et condition de faisabilité",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/15-eigrp.md",
+    "questions": 3
+  },
+  {
+    "id": "16",
+    "title": "IS-IS, niveaux et TLV",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/16-isis.md",
+    "questions": 3
+  },
+  {
+    "id": "17",
+    "title": "BGP, attributs et politique de chemin",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/17-bgp.md",
+    "questions": 3
+  },
+  {
+    "id": "18",
+    "title": "MP-BGP, AFI/SAFI et familles de routes",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/18-mp-bgp.md",
+    "questions": 3
+  },
+  {
+    "id": "19",
+    "title": "Redistribution, filtrage et prévention des boucles",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/19-redistribution-filtrage.md",
+    "questions": 3
+  },
+  {
+    "id": "20",
+    "title": "VRF, VRF-Lite et route leaking",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/20-vrf.md",
+    "questions": 3
+  },
+  {
+    "id": "21",
+    "title": "MPLS, labels et transport",
+    "group": "04-mpls-et-overlays",
+    "path": "fiches/04-mpls-et-overlays/21-mpls.md",
+    "questions": 3
+  },
+  {
+    "id": "22",
+    "title": "MPLS L3VPN, RD, RT et MP-BGP",
+    "group": "04-mpls-et-overlays",
+    "path": "fiches/04-mpls-et-overlays/22-mpls-l3vpn.md",
+    "questions": 3
+  },
+  {
+    "id": "23",
+    "title": "L2VPN, pseudowire, VPWS et VPLS",
+    "group": "04-mpls-et-overlays",
+    "path": "fiches/04-mpls-et-overlays/23-l2vpn.md",
+    "questions": 3
+  },
+  {
+    "id": "24",
+    "title": "VXLAN, VTEP, VNI et underlay",
+    "group": "04-mpls-et-overlays",
+    "path": "fiches/04-mpls-et-overlays/24-vxlan.md",
+    "questions": 3
+  },
+  {
+    "id": "25",
+    "title": "EVPN, routes BGP et IRB",
+    "group": "04-mpls-et-overlays",
+    "path": "fiches/04-mpls-et-overlays/25-evpn.md",
+    "questions": 3
+  },
+  {
+    "id": "26",
+    "title": "TCP, fiabilité, fenêtres et congestion",
+    "group": "05-transport-et-services",
+    "path": "fiches/05-transport-et-services/26-tcp.md",
+    "questions": 3
+  },
+  {
+    "id": "27",
+    "title": "UDP et responsabilité de l’application",
+    "group": "05-transport-et-services",
+    "path": "fiches/05-transport-et-services/27-udp.md",
+    "questions": 3
+  },
+  {
+    "id": "28",
+    "title": "MTU, MSS, fragmentation et PMTUD",
+    "group": "05-transport-et-services",
+    "path": "fiches/05-transport-et-services/28-mtu-mss-pmtud.md",
+    "questions": 3
+  },
+  {
+    "id": "29",
+    "title": "DHCP, DNS et NTP comme dépendances réseau",
+    "group": "05-transport-et-services",
+    "path": "fiches/05-transport-et-services/29-dhcp-dns-ntp.md",
+    "questions": 3
+  },
+  {
+    "id": "30",
+    "title": "NAT, PAT et lecture d’un flux traduit",
+    "group": "05-transport-et-services",
+    "path": "fiches/05-transport-et-services/30-nat-pat.md",
+    "questions": 3
+  },
+  {
+    "id": "31",
+    "title": "QoS, DSCP, files, policing et shaping",
+    "group": "05-transport-et-services",
+    "path": "fiches/05-transport-et-services/31-qos.md",
+    "questions": 3
+  },
+  {
+    "id": "32",
+    "title": "ACL, firewall stateful et IPsec",
+    "group": "06-securite-et-sdwan",
+    "path": "fiches/06-securite-et-sdwan/32-acl-firewall-ipsec.md",
+    "questions": 3
+  },
+  {
+    "id": "33",
+    "title": "SD-WAN, underlay, overlay et politique applicative",
+    "group": "06-securite-et-sdwan",
+    "path": "fiches/06-securite-et-sdwan/33-sdwan.md",
+    "questions": 3
+  },
+  {
+    "id": "34",
+    "title": "NAC, 802.1X, EAP, RADIUS et CoA",
+    "group": "07-acces-et-wifi",
+    "path": "fiches/07-acces-et-wifi/34-nac.md",
+    "questions": 3
+  },
+  {
+    "id": "35",
+    "title": "Wi-Fi, radio, canaux et airtime",
+    "group": "07-acces-et-wifi",
+    "path": "fiches/07-acces-et-wifi/35-wifi-radio.md",
+    "questions": 3
+  },
+  {
+    "id": "36",
+    "title": "Wi-Fi, association, sécurité et roaming",
+    "group": "07-acces-et-wifi",
+    "path": "fiches/07-acces-et-wifi/36-wifi-securite-roaming.md",
+    "questions": 3
+  },
+  {
+    "id": "37",
+    "title": "SNMP, télémétrie, logs et données de flux",
+    "group": "08-exploitation",
+    "path": "fiches/08-exploitation/37-observabilite.md",
+    "questions": 3
+  },
+  {
+    "id": "38",
+    "title": "Dépanner de L1 à L4 avec un flux témoin",
+    "group": "08-exploitation",
+    "path": "fiches/08-exploitation/38-diagnostic-transversal.md",
+    "questions": 3
+  },
+  {
+    "id": "39",
+    "title": "Multicast, IGMP, MLD et PIM",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/39-multicast.md",
+    "questions": 3
+  },
+  {
+    "id": "40",
+    "title": "HSRP, VRRP, BFD et convergence",
+    "group": "03-ip-et-routage",
+    "path": "fiches/03-ip-et-routage/40-resilience-fhrp-bfd.md",
+    "questions": 3
+  }
+]
