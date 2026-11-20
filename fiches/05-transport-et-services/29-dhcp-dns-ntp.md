@@ -75,3 +75,47 @@ Le client peut choisir une famille dont le chemin ou la politique diffère.
 - [RFC 5905](https://www.rfc-editor.org/rfc/rfc5905)
 
 Les mécanismes décrits servent à réviser. Les détails CLI et les limites de produit doivent être vérifiés dans la documentation de la version utilisée.
+
+## Approfondissement : renouvellement DHCPv4
+
+Un client déjà configuré ne recommence pas systématiquement Discover/Offer. À T1, il tente de renouveler son bail auprès du serveur initial par DHCPREQUEST unicast. Sans réponse, à T2, il passe en rebinding et diffuse sa demande pour joindre un serveur capable de prolonger le bail. Sans nouveau bail valide à expiration, il doit cesser d'utiliser l'adresse.
+
+Sans valeurs spécifiques fournies par le serveur, T1 vaut 50 % et T2 87,5 % de la durée du bail. Les options 58 et 59 peuvent modifier ces délais : lire les valeurs réellement reçues. Un redémarrage du client peut suivre un autre parcours, notamment INIT-REBOOT.
+
+### Cas d'entraînement
+
+Hypothèses fictives : bail de huit heures obtenu à 08:00, aucun renouvellement accepté, T1/T2 par défaut.
+
+| Heure | Événement attendu |
+| --- | --- |
+| 12:00 | Première phase de renouvellement, vers le serveur initial |
+| 15:00 | Rebinding, demande diffusée |
+| 16:00 | Expiration ; l'adresse ne peut plus être utilisée |
+
+Le poste fonctionne encore à 14:00 alors que son serveur est inaccessible : cela ne prouve pas que DHCP fonctionne. Il utilise simplement un bail encore valide.
+
+### Vérification raisonnée
+
+Relever l'heure d'obtention, la durée, T1/T2, le serveur identifié et les réponses effectivement reçues. Corréler client, relais et serveur avec des horloges cohérentes. Comparer un ancien client et un nouveau : leurs symptômes peuvent différer. Une suppression de bail ou un redémarrage ferait perdre ce témoin ; conserver les observations avant tout changement.
+
+### Questions complémentaires
+
+<details><summary>1. À quelle heure commence T2 pour un bail de quatre heures obtenu à 09:00, avec valeurs par défaut ?</summary>
+
+12:30 : quatre heures multipliées par 0,875 donnent trois heures trente.
+
+</details>
+
+<details><summary>2. Un client encore connecté prouve-t-il que le serveur DHCP est disponible ?</summary>
+
+Non. Il peut utiliser un bail antérieur encore valide. Examiner les réponses aux renouvellements.
+
+</details>
+
+<details><summary>3. Une capture ne montre aucun Discover : DHCP est-il nécessairement absent ?</summary>
+
+Non. Un renouvellement utilise DHCPREQUEST ; identifier l'état du client avant d'interpréter la capture.
+
+</details>
+
+Sources de cet approfondissement : [RFC 2131, section 4.4.5](https://www.rfc-editor.org/rfc/rfc2131#section-4.4.5), [RFC 2132, options 58/59](https://www.rfc-editor.org/rfc/rfc2132#section-9.11). Calculs vérifiables hors ligne ; aucun test réseau revendiqué.

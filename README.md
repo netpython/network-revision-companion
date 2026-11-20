@@ -4,7 +4,7 @@
 
 40 fiches expliquent les bases des couches 1 à 4, les protocoles de routage et les architectures qui les assemblent. Chaque fiche contient un mécanisme expliqué, un exemple, des pièges, des points d’observation et trois questions avec corrections masquées.
 
-`40 fiches` · `120 questions corrigées` · `8 domaines` · `Références primaires`
+`40 fiches` · `123 questions corrigées` · `8 domaines` · `Références primaires`
 
 ## Choisir comment réviser
 
@@ -112,3 +112,7 @@ Les couches OSI donnent la base. DHCP, DNS, NTP, NAC et SD-WAN sont aussi abord�
 Les fiches sont des synthèses pédagogiques originales. Elles renvoient aux RFC, aux groupes IEEE et à des documentations constructeur pour les mécanismes propres à un produit. Une fonction décrite conceptuellement ne garantit pas sa disponibilité sur un modèle ou une version. Les liens internes et calculs d’exemple ont été contrôlés. La collecte de commandes et les essais matériels restent du ressort des labs.
 
 Commence par la [fiche OSI et chemin du paquet](fiches/01-fondations/01-osi-et-chemin-du-paquet.md) ou ouvre directement le thème à rafraîchir.
+
+## Approfondissements
+
+- [Renouvellement DHCPv4 : T1, T2 et expiration du bail](fiches/05-transport-et-services/29-dhcp-dns-ntp.md#approfondissement--renouvellement-dhcpv4) — cas horaire et questions complémentaires.
